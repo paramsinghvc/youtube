@@ -15,6 +15,7 @@ var _2 = require('./snippet-item/');
 var YoutubeAppComponent = (function () {
     function YoutubeAppComponent() {
         this.title = 'Youtube Search';
+        this.loading = false;
     }
     YoutubeAppComponent.prototype.updateResults = function (results) {
         console.log(results);
@@ -33,4 +34,4 @@ var YoutubeAppComponent = (function () {
     return YoutubeAppComponent;
 }());
 exports.YoutubeAppComponent = YoutubeAppComponent;
-//# sourceMappingURL=/Users/param/Documents/code/Youtube/tmp/broccoli_type_script_compiler-input_base_path-TvmzazJH.tmp/0/app/youtube.component.js.map
+//# sourceMappingURL=/Users/param/Documents/code/Youtube/tmp/broccoli_type_script_compiler-input_base_path-mVyOrclA.tmp/0/app/youtube.component.js.map

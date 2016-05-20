@@ -19,10 +19,13 @@
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">
-            	<app-search-box (loading)="loading=$event" (results)="updateResults($event)"></app-search-box>
-            	<div class="mdl-grid">
-            		<app-snippet-item [result]="result" *ngFor="let result of results" class="mdl-cell mdl-cell--4-col"></app-snippet-item>
-            	</div>            	
+                <app-search-box (loading)="loading=$event" (results)="updateResults($event)"></app-search-box>
+                <div class="mdl-grid">
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-spinner mdl-js-spinner is-active" *ngIf="loading"></div>
+                    <div class="mdl-layout-spacer"></div>
+                    <app-snippet-item [result]="result" *ngFor="let result of results" class="mdl-cell mdl-cell--4-col"></app-snippet-item>
+                </div>
             </div>
         </main>
     </div>
