@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/app/snippet-item/index.ts"],"names":[],"mappings":";AAAA,uCAAqC,0BAA0B,CAAC;AAAvD,6EAAuD","sourcesContent":["export { SnippetItemComponent } from './snippet-item.component';\n"]}
