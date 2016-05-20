@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="mdl-layout__container" mdl>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">{{title}}</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a href="#" class="mdl-navigation__link">Home</a>
+                    <a href="#" class="mdl-navigation__link">About</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"></span>
+            <nav class="mdl-navigation">
+                <a href="" class="mdl-navigation__link">Home</a>
+                <a href="" class="mdl-navigation__link">About</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+            	<app-search-box (loading)="loading=$event" (results)="updateResults($event)"></app-search-box>
+            	<div class="mdl-grid">
+            		<app-snippet-item [result]="result" *ngFor="let result of results" class="mdl-cell mdl-cell--4-col"></app-snippet-item>
+            	</div>            	
+            </div>
+        </main>
+    </div>
+</div>
