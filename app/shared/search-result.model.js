@@ -11,4 +11,4 @@ var SearchResult = (function () {
     return SearchResult;
 }());
 exports.SearchResult = SearchResult;
-//# sourceMappingURL=/Users/param/Documents/code/Youtube/tmp/broccoli_type_script_compiler-input_base_path-0rPh8Mfj.tmp/0/app/shared/search-result.model.js.map
+//# sourceMappingURL=/Users/param/Documents/code/Youtube/tmp/broccoli_type_script_compiler-input_base_path-TvmzazJH.tmp/0/app/shared/search-result.model.js.map
