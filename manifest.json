@@ -1,0 +1,13 @@
+{
+    "lang": "en",
+    "name": "Youtube Search",
+    "short_name": "Youtube",
+    "icons": [{
+        "src": "../public/Video-Camera-128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    }],
+    "display": "standalone",
+    "theme_color": "#009688",
+    "orientation": "portrait"
+}
